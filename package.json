@@ -1,0 +1,19 @@
+{
+  "name": "tg-lethimcook-app-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.1"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "redis": "^4.6.14"
+  }
+}
