@@ -1,9 +1,14 @@
 const TelegramBot = require('node-telegram-bot-api');
+const express = require('express');
+const cors = require('cors');
 const token = '7371809704:AAFqZyHLqBPZazNI5GpI0icrgYX4jJNbK6k';
 const bot = new TelegramBot(token, {polling: true});
+const app = express();
 let webAppUrl = "https://hilarious-salamander-b00bad.netlify.app";
 let ownerChatID =  770417666;
 let savedID = new Array();
+app.use(express.json());
+app.use(cors());
 bot.on('message', async (msg) => {
   
   const chatId = msg.chat.id;
@@ -147,3 +152,7 @@ bot.on('callback_query', async (query) => {
 
   bot.answerCallbackQuery(query.id);
 });
+
+const PORT = 8000;
+
+app.listen(PORT, () => console.log('server started on PORT ' + PORT))
