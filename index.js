@@ -78,6 +78,7 @@ bot.on('message', async (msg) => {
 С уважением,
 Твой клановый бот 🤖`,{
 reply_markup:{
+  resize_keyboard: true,
   keyboard:  [[]]
 }});
       await bot.sendMessage(ownerChatID, `Отправлена форма от пользователя: @${username}.
