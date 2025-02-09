@@ -1,4 +1,4 @@
-Link: https://t.me/lethimcook_clan_bot
+# Link/Ссылка: https://t.me/lethimcook_clan_bot
 ---
 ### **ENG**  
 **TG LethimCook App Bot** is a Telegram bot built using **Node.js**, **Express**, and **Telegram Bot API** to manage clan membership applications. The bot handles interactions with users, such as guiding them through the clan rules, collecting information via forms, and notifying clan administrators when a user submits their application. The admin can accept or reject the application based on the provided data, including age, trophies, and a special code word.
